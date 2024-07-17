@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body, html {
+    font-size: 'karla', sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+.contact-form h2 {
+    color: hsl(187, 24%, 22%);
+}
+
+.contact-form {
+    margin: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.form-row {
+    display: flex;
+    
+    
+}
+
+
+input[type="text"],input[type="email"],textarea , input[type="radio"]{
+    padding: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+
+.radio-wrapper {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+    align-items: center;
+    
+}
+
+.error {
+    color: red;
+
+}
+
+.contact-form button {
+    padding: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    align-items: center;
+    background-color:hsl(169, 82%, 27%) ;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: hsl(187, 24%, 22%);
+}
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
