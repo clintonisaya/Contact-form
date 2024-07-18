@@ -1,93 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-body, html {
-    font-size: 'karla', sans-serif;
-    background-color: hsl(148, 38%, 91%);
+* {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-
-}
-
-#contact-form h2 {
-    color: hsl(187, 24%, 22%);
-}
-
-#contact-form {
+    background-color: hsl(148, 38%, 91%);
     margin: 20px;
-    background-color: hsl(0, 0%, 100%);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 700px;
     width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-
-
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.container .title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.form-row {
+.container form .contact-details {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .contact-details .input-box .details {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+form .contact-details .input-box {
+    width: calc(100%/2 - 20px);
+    margin: 20px 0px 12px 0px;
+}
+
+form .contact-details #email {
+    width: 100%;
+}
+
+.contact-details .input-box input[type='text'],
+.contact-details .input-box input[type='email'],
+.contact-details .input-box textarea {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact-details .input-box input[type="text"]:hover,
+.contact-details .input-box input[type="email"]:hover,
+.contact-details .input-box textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.contact-details .input-box input[type="text"]:focus,
+.contact-details .input-box input[type="email"]:focus,
+.contact-details .input-box textarea:focus-within {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.contact-details .input-box textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-details .input-box .query-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     
 }
 
-
-input[type="text"],input[type="email"],textarea , input[type="radio"]{
-    padding: 10px;
-    border: 1px solid hsl(186, 15%, 59%);
+.contact-details .input-box .query-options .query-option {
+    
+    border: 1px solid #ccc;
+    height: 45px;
+    padding-left: 20px;
     border-radius: 5px;
+    width: calc(100%/2 - 20px);
+    cursor: pointer;
+    
+  }
+
+.contact-details .input-box .query-options .query-option:hover{
+  
+  border: 1px solid hsl(169, 82%, 27%);
+  
+  
 }
 
-.radio-wrapper {
-    border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    flex-grow: 1;
+.contact-details .input-box .query-options .query-option:focus{
+  
+  border: 1px solid hsl(169, 82%, 27%);
+  background-color: hsl(148, 38%, 91%);
+  
+}
+
+
+.contact-details .input-box .query-options div {
+    display: flex;
     align-items: center;
     
 }
 
-.error {
+.contact-details .input-box .query-options input[type='radio'] {
+    margin-right: 5px;
+    ;
+}
+
+.contact-details .input-box textarea {
+    display: flex;
+}
+
+form .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form .button input[type='submit'] {
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(148, 38%, 40%);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 45px;
+    width: 100%;
+}
+
+form .button input[type='submit']:hover {
+    background-color: hsl(148, 38%, 30%);
+}
+
+form .contact-details .full-width {
+    width: 100%;
+}
+
+form .contact-details .consent-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .error {
     color: red;
     display: none;
-
 }
 
-#contact-form button {
-    padding: 10px;
-    border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
-    align-items: center;
-    background-color:hsl(169, 82%, 27%) ;
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
+form input[type="radio"],
+form input[type="checkbox"] {
+  accent-color: hsl(148, 38%, 30%);
+
 }
-
-#contact-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: hsl(187, 24%, 22%);
-}
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
