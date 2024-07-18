@@ -10,11 +10,11 @@ body, html {
 
 }
 
-.contact-form h2 {
+#contact-form h2 {
     color: hsl(187, 24%, 22%);
 }
 
-.contact-form {
+#contact-form {
     margin: 20px;
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
@@ -60,10 +60,11 @@ input[type="text"],input[type="email"],textarea , input[type="radio"]{
 
 .error {
     color: red;
+    display: none;
 
 }
 
-.contact-form button {
+#contact-form button {
     padding: 10px;
     border: 1px solid hsl(186, 15%, 59%);
     border-radius: 5px;
@@ -75,7 +76,7 @@ input[type="text"],input[type="email"],textarea , input[type="radio"]{
     font-size: 16px;
 }
 
-.contact-form label {
+#contact-form label {
     font-size: 16px;
     margin-bottom: 5px;
     color: hsl(187, 24%, 22%);
