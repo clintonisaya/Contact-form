@@ -46,7 +46,7 @@ form .contact-details .input-box {
     margin: 20px 0px 12px 0px;
 }
 
-form .contact-details #email {
+form .contact-details .email {
     width: 100%;
 }
 
