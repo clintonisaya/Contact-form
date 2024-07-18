@@ -4,7 +4,7 @@ document.addEventListener('submit', function(event) {
   let isValid = true;
   const errorelements = document.querySelectorAll('.error')
   errorelements.forEach(element => element.style.display = 'none');
-  
+
   const firstName = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const email = document.getElementById('email').value;
@@ -36,7 +36,10 @@ document.addEventListener('submit', function(event) {
     isValid = false;
   }
   if (isValid) {
+    setTimeout(function(){
+      document.getElementById('form').reset();
+      alert('Form submitted successfully!');
+    }, 1000);
     
-    alert('Form submitted successfully!');
   }
 });
