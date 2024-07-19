@@ -8,55 +8,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="title">Contact Us</div>
-    <form action="#" id="form">
-      <div class="contact-details">
-        <div class="input-box">
-          <label for="first-name" class="details">First Name *</label>
-          <input type="text" id="first-name" >
-          <span class="error" id="error-first-name">This field is required</span>
-        </div>
-        <div class="input-box">
-          <label for="last-name" class="details">Last Name *</label>
-          <input type="text" id="last-name" >
-          <span class="error" id="error-last-name">This field is required</span>
-        </div>
-        <div class="input-box email">
-          <label for="email" class="details">Email *</label>
-          <input type="email" id="email" >
-          <span class="error" id="error-email">Please enter a valid emaail address</span>
-        </div>
-        <div class="input-box full-width" >
-          <label for="query-type" class="details">Query Type *</label>
-          <div class="query-options">
-            <div class="query-option">
-              <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" >
-              <label for="general-enquiry">General Enquiry</label>
-            </div>
-            <div class="query-option">
-              <input type="radio" id="support-request" name="query-type" value="support-request" >
-              <label for="support-request">Support Request</label>
-            </div>
+  <main>
+    <div class="container">
+      <div class="title"><h1>Contact Us</h1></div>
+      <form action="#" id="form">
+        <div class="contact-details">
+          <div class="input-box">
+            <label for="first-name" class="details">First Name *</label>
+            <input type="text" id="first-name" >
+            <span class="error" id="error-first-name">This field is required</span>
           </div>
-          <span class="error" id="error-query-type">Please select a query type</span>
+          <div class="input-box">
+            <label for="last-name" class="details">Last Name *</label>
+            <input type="text" id="last-name" >
+            <span class="error" id="error-last-name">This field is required</span>
+          </div>
+          <div class="input-box email">
+            <label for="email" class="details">Email *</label>
+            <input type="email" id="email" >
+            <span class="error" id="error-email">Please enter a valid emaail address</span>
+          </div>
+          <div class="input-box full-width" >
+            <label for="query-type" class="details">Query Type *</label>
+            <div class="query-options">
+              <div class="query-option">
+                <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" >
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+              <div class="query-option">
+                <input type="radio" id="support-request" name="query-type" value="support-request" >
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+            <span class="error" id="error-query-type">Please select a query type</span>
+          </div>
+          <div class="input-box full-width">
+            <label for="message" class="details">Message *</label>
+            <textarea id="message" name="message" ></textarea>
+            <span class="error" id="error-message">This field is required</span>
+          </div>
+          <div class="inbox-input consent-block" >
+            <input type="checkbox" id="consent">
+            <slabel class="details">I hereby consent to be contacted by the team *</label>
+            <span class="error" id="error-consent">To submit this form, please consent to be contacted</span>
+          </div>
         </div>
-        <div class="input-box full-width">
-          <label for="message" class="details">Message *</label>
-          <textarea id="message" name="message" ></textarea>
-          <span class="error" id="error-message">This field is required</span>
+        <div class="button">
+          <input type="submit" value="Submit">
         </div>
-        <div class="inbox-input consent-block" >
-          <input type="checkbox" id="consent">
-          <slabel class="details">I hereby consent to be contacted by the team *</label>
-          <span class="error" id="error-consent">To submit this form, please consent to be contacted</span>
-        </div>
-      </div>
-      <div class="button">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-  <script src="script.js"></script>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </main>
 </body>
 </html>
