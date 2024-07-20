@@ -14,6 +14,20 @@ body {
     margin: 20px;
 }
 
+.success-card {
+    background: hsl(169, 82%, 27%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
+.success-card.show {
+    display: block;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -25,8 +39,7 @@ body {
 
 .container .title {
     font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .container form .contact-details {
@@ -38,7 +51,7 @@ body {
 form .contact-details .input-box .details {
     display: block;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 form .contact-details .input-box {
@@ -55,7 +68,7 @@ form .contact-details .email {
 .contact-details .input-box textarea {
     height: 45px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid hsl(186, 15%, 59%);
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
@@ -88,7 +101,7 @@ form .contact-details .email {
 
 .contact-details .input-box .query-options .query-option {
     
-    border: 1px solid #ccc;
+    border: 1px solid hsl(186, 15%, 59%);
     height: 45px;
     padding-left: 20px;
     border-radius: 5px;
@@ -136,7 +149,7 @@ form .button {
 form .button input[type='submit'] {
     padding: 10px 20px;
     border: none;
-    background-color: hsl(148, 38%, 40%);
+    background-color: hsl(169, 82%, 27%);
     color: white;
     font-size: 16px;
     border-radius: 5px;
@@ -146,9 +159,6 @@ form .button input[type='submit'] {
     width: 100%;
 }
 
-form .button input[type='submit']:hover {
-    background-color: hsl(148, 38%, 30%);
-}
 
 form .contact-details .full-width {
     width: 100%;
@@ -166,6 +176,7 @@ form .error {
 
 form input[type="radio"],
 form input[type="checkbox"] {
-  accent-color: hsl(148, 38%, 30%);
+  accent-color: hsl(169, 82%, 27%);
 
 }
+

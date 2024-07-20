@@ -5,6 +5,8 @@ document.addEventListener('submit', function(event) {
   const errorelements = document.querySelectorAll('.error')
   errorelements.forEach(element => element.style.display = 'none');
 
+  const successcard = document.getElementById('successCard');
+
   const firstName = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const email = document.getElementById('email').value;
@@ -37,8 +39,8 @@ document.addEventListener('submit', function(event) {
   }
   if (isValid) {
     setTimeout(function(){
+      successCard.classList.add('show');
       document.getElementById('form').reset();
-      alert('Form submitted successfully!');
     }, 1000);
     
   }
